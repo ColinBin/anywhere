@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.colinlvbin.extreme.anywhere">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".activity.SignUpActivity">
+        </activity>
+        <activity android:name=".activity.SettingsNavActivity">
+        </activity>
+        <activity android:name=".activity.SettingsBasicActivity">
+        </activity>
+        <activity android:name=".activity.SettingsPasswordActivity">
+        </activity>
+        <activity android:name=".activity.ConfigurePostActivity">
+        </activity>
+        <activity android:name=".activity.CreatePostActivity">
+        </activity>
+        <activity android:name=".activity.ShowPostsActivity">
+        </activity>
+        <activity android:name=".activity.PostDetailActivity">
+        </activity>
+        <activity android:name=".activity.PostCommentsActivity">
+        </activity>
+    </application>
+
+</manifest>
