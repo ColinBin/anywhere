@@ -9,13 +9,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.colinlvbin.extreme.anywhere.activity.PostCommentsActivity">
-    <TextView
-        android:id="@+id/title_post_comments"
-        android:text="@string/comments"
-        android:textSize="35sp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
     <TableLayout
         android:id="@+id/comment_segment_post_comments"
@@ -29,6 +22,7 @@
                 android:id="@+id/input_comment_post_comments"
                 android:hint="@string/input_comment"/>
             <Button
+                style="@style/RbButton.Blue"
                 android:id="@+id/submit_comment_button_post_comments"
                 android:text="@string/submit_comment"
                 android:textAllCaps="false"
@@ -39,7 +33,7 @@
     </TableLayout>
     <ListView
         android:id="@+id/comment_list_post_comments"
-        android:layout_below="@id/title_post_comments"
+        android:layout_alignParentTop="true"
         android:layout_above="@id/comment_segment_post_comments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

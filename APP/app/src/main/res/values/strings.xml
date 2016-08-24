@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">Anywhere</string>
-    <string name="title_activity_home">主页面</string>
+    <string name="title_activity_home">Anywhere</string>
+    <string name="title_activity_configure_post">配置</string>
+    <string name="title_activity_create_post">创建</string>
+    <string name="title_activity_nearby_posts">附近</string>
+    <string name="title_activity_settings_nav">设置</string>
+    <string name="title_activity_settings_basic">基本信息</string>
+    <string name="title_activity_settings_password">修改密码</string>
+    <string name="title_activity_settings_configure">配置信息</string>
+    <string name="title_activity_post_detail">详细信息</string>
+    <string name="title_activity_comments">评论</string>
+    <string name="title_activity_sign_up">注册</string>
+    <string name="title_activity_login">登录</string>
+
     <string name="user_id">用户ID</string>
     <string name="password">密码</string>
     <string name="user_name">用户昵称</string>
@@ -92,6 +104,11 @@
     <string name="comment_number">评论数</string>
     <string name="like_number">喜欢数</string>
     <string name="author_id">作者ID</string>
+
+    <string name="created_by">创建者:</string>
+
+    <string name="no_content">(无内容)</string>
+
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

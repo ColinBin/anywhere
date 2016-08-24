@@ -32,7 +32,6 @@ public class PostDetailActivity extends AppCompatActivity implements View.OnClic
     private TextView postContentDisplay;
     private TextView postCreateTimeDisplay;
     private TextView postLikeNumberDisplay;
-    private TextView postCommentNumberDisplay;
     private TextView postCondemnNumberDisplay;
     private ImageView postPictureImage;
     private ImageView hasLikedPostImage;
@@ -62,7 +61,6 @@ public class PostDetailActivity extends AppCompatActivity implements View.OnClic
         postPictureImage=(ImageView)findViewById(R.id.post_picture_post_detail);
         hasLikedPostImage=(ImageView)findViewById(R.id.has_liked_image_post_detail);
         hasCondemnedPostImage=(ImageView)findViewById(R.id.has_condemned_image_post_detail);
-        postCommentNumberDisplay=(TextView)findViewById(R.id.comment_number_post_detail);
         postLikeNumberDisplay=(TextView)findViewById(R.id.like_number_post_detail);
         postCondemnNumberDisplay=(TextView)findViewById(R.id.condemn_number_post_detail);
         postCreateTimeDisplay=(TextView)findViewById(R.id.create_time_post_detail);
@@ -85,12 +83,22 @@ public class PostDetailActivity extends AppCompatActivity implements View.OnClic
 
     private void InitializePostInfo(Post post){
         postTitleDisplay.setText(post.getTitle());
-        postContentDisplay.setText(post.getContent());
+        if(post.getContent().isEmpty()&&post.getHas_picture()==0){
+            postContentDisplay.setTextSize(20);
+            postContentDisplay.setText(R.string.no_content);
+        }else{
+            postContentDisplay.setText(post.getContent());
+        }
+
         postCreatorDisplay.setText(post.getUser_id());
         postCreateTimeDisplay.setText(post.getCreate_time());
-        postCommentNumberDisplay.setText(String.valueOf(post.getComment_number()));
         postLikeNumberDisplay.setText(String.valueOf(post.getLike_number()));
         postCondemnNumberDisplay.setText(String.valueOf(post.getCondemn_number()));
+        if(post.getComment_number()>0){
+            checkCommentsButton.setText(getString(R.string.comments)+"("+String.valueOf(post
+                    .getComment_number
+                    ())+")");
+        }
         if(post.getHas_picture()==1){
             Request<Bitmap>getPostPictureRequest=NoHttp.createImageRequest(Config
                     .SERVER_IP+"/get_post_picture", RequestMethod.POST);
@@ -297,8 +305,8 @@ public class PostDetailActivity extends AppCompatActivity implements View.OnClic
         switch(requestCode){
             case Config.POST_DETAIL_TO_POST_COMMENTS_REQUESTCODE:
                 if(resultCode==RESULT_OK){
-                    postCommentNumberDisplay.setText(String.valueOf(data.getIntExtra
-                            ("comment_number",0)));
+                    checkCommentsButton.setText(getString(R.string.comments)+"("+data.getIntExtra
+                            ("comment_number",0) +")");
                 }
 
                 break;

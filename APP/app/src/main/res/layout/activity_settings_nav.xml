@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <Button
+            style="@style/RbButton.Darken"
             android:id="@+id/basic_settings"
             android:text="@string/basic_user_info"
             android:textAllCaps="false"
@@ -22,12 +23,14 @@
             android:layout_height="wrap_content"/>
 
         <Button
+            style="@style/RbButton.Darken"
             android:id="@+id/password_settings"
             android:text="@string/alter_password"
             android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
+            style="@style/RbButton.Darken"
             android:id="@+id/configure_settings"
             android:text="@string/configure"
             android:textAllCaps="false"
@@ -35,6 +38,7 @@
             android:layout_height="wrap_content"/>
 
         <Button
+            style="@style/RbButton.Darken"
             android:id="@+id/return_nav_settings"
             android:text="@string/cancel"
             android:textAllCaps="false"

@@ -40,12 +40,14 @@
                 android:layout_height="wrap_content"/>
         </android.support.design.widget.TextInputLayout>
         <Button
+            style="@style/RbButton.Blue"
             android:id="@+id/change_basic_button_settings"
             android:text="@string/confirm"
             android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
+            style="@style/RbButton.Yellow"
             android:id="@+id/cancel_basic_button_settings"
             android:text="@string/cancel"
             android:textAllCaps="false"

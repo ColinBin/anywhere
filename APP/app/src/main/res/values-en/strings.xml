@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">Anywhere</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home">Anywhere</string>
+    <string name="title_activity_configure_post">Configure Post</string>
+    <string name="title_activity_create_post">Create Post</string>
+    <string name="title_activity_nearby_posts">Nearby Post</string>
+    <string name="title_activity_settings_nav">Settings</string>
+    <string name="title_activity_settings_basic">Basic Settings</string>
+    <string name="title_activity_settings_password">Alter Password</string>
+    <string name="title_activity_settings_configure">Configure APP</string>
+    <string name="title_activity_post_detail">Post Detail</string>
+    <string name="title_activity_comments">Comments</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_login">Login</string>
+
     <string name="user_id">User ID</string>
     <string name="password">Password</string>
     <string name="user_name">Nickname</string>
@@ -44,7 +56,7 @@
     <string name="submit_comment">Submit</string>
     <string name="input_comment">write here</string>
 
-    <string name="please_wait">Please wait...</string>
+    <string name="please_wait">Please wait…</string>
     <string name="user_id_cannot_be_empty">user ID cannot be empty</string>
     <string name="password_cannot_be_empty">password cannot be empty</string>
     <string name="password_length">password length[6,20]</string>
@@ -66,12 +78,12 @@
     <string name="create_post_succeed">Create post succeeded</string>
     <string name="please_enable_LBS">Enable LBS and try again</string>
     <string name="incorrect_email_format">incorrect email format</string>
-    <string name="fetching">Loading...</string>
+    <string name="fetching">Loading…</string>
     <string name="no_posts_around">No posts around. How about creating one?</string>
 
-    <string name="fetch_pic_failure">Fail to load the picture...</string>
+    <string name="fetch_pic_failure">Fail to load the picture…</string>
     <string name="comment_cannot_be_empty">Comment cannot be empty</string>
-    <string name="no_comments">No comments yet...</string>
+    <string name="no_comments">No comments yet…</string>
     <string name="create_comment_succeed">Commenting succeeded</string>
 
     <string name="no_change_to_data">No change to user information</string>
@@ -80,7 +92,7 @@
     <string name="alter_password_succeed">Changing password succeeded</string>
 
     <string name="log_out_info">Exit current account</string>
-    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="press_again_to_exit">press again to exit</string>
 
     <string name="fail_to_get_location_description">Fail to load location description</string>
 
@@ -92,6 +104,9 @@
     <string name="comment_number">comments</string>
     <string name="like_number">likes</string>
     <string name="author_id">author</string>
+    <string name="created_by">created by </string>
+
+    <string name="no_content">(Empty)</string>
 
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

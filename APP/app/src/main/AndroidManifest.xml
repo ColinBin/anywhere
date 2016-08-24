@@ -26,25 +26,45 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".activity.SignUpActivity">
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:label="@string/title_activity_sign_up">
         </activity>
-        <activity android:name=".activity.SettingsNavActivity">
+        <activity
+            android:name=".activity.SettingsNavActivity"
+            android:label="@string/title_activity_settings_nav">
         </activity>
-        <activity android:name=".activity.SettingsBasicActivity">
+        <activity
+            android:name=".activity.SettingsBasicActivity"
+            android:label="@string/title_activity_settings_basic">
         </activity>
-        <activity android:name=".activity.SettingsPasswordActivity">
+        <activity
+            android:name=".activity.SettingsPasswordActivity"
+            android:label="@string/title_activity_settings_password">
         </activity>
-        <activity android:name=".activity.ConfigurePostActivity">
+        <activity
+            android:name=".activity.ConfigurePostActivity"
+            android:label="@string/title_activity_configure_post">
         </activity>
-        <activity android:name=".activity.CreatePostActivity">
+        <activity
+            android:name=".activity.CreatePostActivity"
+            android:label="@string/title_activity_create_post">
         </activity>
-        <activity android:name=".activity.ShowPostsActivity">
+        <activity
+            android:name=".activity.ShowPostsActivity"
+            android:label="@string/nearby_posts">
         </activity>
-        <activity android:name=".activity.PostDetailActivity">
+        <activity
+            android:name=".activity.PostDetailActivity"
+            android:label="@string/title_activity_post_detail">
         </activity>
-        <activity android:name=".activity.PostCommentsActivity">
+        <activity
+            android:name=".activity.PostCommentsActivity"
+            android:label="@string/title_activity_comments">
         </activity>
-        <activity android:name=".activity.SettingsConfigureActivity">
+        <activity
+            android:name=".activity.SettingsConfigureActivity"
+            android:label="@string/title_activity_settings_configure">
         </activity>
     </application>
 

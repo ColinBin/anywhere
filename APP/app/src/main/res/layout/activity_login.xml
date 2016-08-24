@@ -56,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
+            style="@style/RbButton.Blue"
             android:id="@+id/login_button_login"
             android:text="@string/log_in"
             android:textAllCaps="false"
@@ -63,6 +64,7 @@
             android:layout_height="wrap_content"/>
 
         <Button
+            style="@style/RbButton.Blue"
             android:id="@+id/sign_up_button_login"
             android:text="@string/sign_up"
             android:textAllCaps="false"

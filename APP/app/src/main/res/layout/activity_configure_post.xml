@@ -15,14 +15,11 @@
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:text="@string/configure_post"
-            android:textSize="40sp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+
         <TextView
             android:text="@string/current_location"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
@@ -89,12 +86,14 @@
 
         </android.support.design.widget.TextInputLayout>
         <Button
+            style="@style/RbButton.Blue"
             android:id="@+id/confirm_button_configure_post"
             android:text="@string/confirm"
             android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
+            style="@style/RbButton.Yellow"
             android:id="@+id/cancel_button_configure_post"
             android:text="@string/cancel"
             android:textAllCaps="false"

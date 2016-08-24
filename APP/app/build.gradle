@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:design:22.2.1'
     compile 'com.yolanda.nohttp:nohttp:1.0.1'
+    compile 'com.github.ksoichiro:richbuttons:0.1.1@aar'
 }

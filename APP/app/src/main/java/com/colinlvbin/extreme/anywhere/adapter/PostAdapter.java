@@ -34,6 +34,8 @@ public class PostAdapter extends ArrayAdapter<Post>{
         ((TextView)view.findViewById(R.id.post_comment_number_post_item)).setText(String
                 .valueOf(currentPost
                         .getComment_number()));
+        ((TextView)view.findViewById(R.id.post_like_number_post_item)).setText(String.valueOf(currentPost
+                .getLike_number()));
         ImageView hasCipherImage=(ImageView)view.findViewById(R.id.has_cipher_image_post_item);
         if(currentPost.getHas_cipher()==1) {
             hasCipherImage.setImageResource(R.drawable.has_cipher);
