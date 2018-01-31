@@ -9,7 +9,7 @@ This application is based on LBS. The **main idea** is to allow users to place p
 - After enabling LBS, users can fetch posts according to his/her current location.
 - User can "place" posts where they are, which could be revealed to others nearby.
 - A post is basically composed of a title and some lines. But author could lock the post with a password which could be shared with others so that they can check the post. A post also comes with an optional picture, which could be picked from album or taken with camera.
-- A post can be commented and liked or condemned.
+- A post can be commented and liked or disliked.
 
 # Characteristics
 - Support auto-login.
